@@ -1,0 +1,60 @@
+<% function main(__append) { %> 
+  <div class="space-y-8">
+    <div id="news">
+      <h2 class="sec-head text-3xl">News</h2>
+      <p>2021/02/14 <a href="https://barusupdateservice.web.app/">旧サイト</a>からこちらのGithubPagesに移行＆せっかくなのでイチから作り直しを行いました。</p>
+    </div>
+
+    <div id="moa">
+      <h2 class="sec-head text-3xl">マシュマロ配信支援ツール（仮）</h2>
+      <div class="flex flex-col lg:flex-row lg:space-x-4 lg:justify-between">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/o7OTvmbbBSA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen 
+        class="max-w-full flex-shrink-0"></iframe>
+        <div class="flex-shrink flex flex-col justify-between">
+          <p class="">
+            マシュマロ配信で，ダウンロードフォルダがマシュマロの画像で埋まる・画像を管理するのが面倒といった問題を軽減してくれるツールです。
+            マシュマロの「画像ダウンロード」ボタンの機能を置き換えて，OBSへのマシュマロ画像の取り込みの手間を省きます。
+          </p>
+          <div class="flex justify-end">
+            <div class="flex flex-col justify-center">
+              <a href="https://github.com/hantabaru1014/marshmallow-obs-assistant/blob/master/README.md" target="_blank">詳細はこちら</a>
+            </div>
+            <a class="m-5 dl-btn" href="https://github.com/hantabaru1014/marshmallow-obs-assistant/releases" target="_blank">Download</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="ydga">
+      <h2 class="sec-head text-3xl">Youtube-dl GUI Assistant</h2>
+      <div class="flex flex-col md:flex-row md:space-x-4 md:justify-between">
+        <div class="flex justify-center flex-grow">
+          <a href="img/ydga01.png" class="lightbox"><img src="img/ydga01.png" class="max-h-60 border"></a>
+        </div>
+        <div class="flex flex-col justify-between">
+          <p>
+            CUIソフトである <a href="https://rg3.github.io/youtube-dl/">youtube-dl</a> と <a href="https://www.ffmpeg.org/">ffmpeg</a> を使いやすいようにGUIから操作できるようにした動画・音楽ダウンロードソフトです。<br>
+            ※画像はクリックすると拡大表示されます。<br>
+            <br>
+            動作環境： windows7/8/10 (.Net Framework4.5.2 以上がインストールされた環境)<br>
+          </p>
+          <div class="flex justify-end">
+            <!-- <div class="flex flex-col justify-center">
+              <a href="">詳細はこちら</a>
+            </div> -->
+            <a class="m-5 dl-btn" href="http://bit.ly/2Dvk1uB" target="_blank">Download</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+<% } %>
+
+<% 
+  const pageConf = {
+    pageTitle: 'Home',
+    pageDescription: 'hantabaru1014が作成したソフトウェアやWebツールの紹介・配布など',
+    lastUpdate: '2021/02/15'
+  };
+%> 
+<%- include('_layout/_default', {global, pageConf, main}); %>

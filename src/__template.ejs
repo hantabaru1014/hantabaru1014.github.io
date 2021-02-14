@@ -1,0 +1,18 @@
+<% function headBottom(__append) { %>
+  
+<% } %>
+<% function main(__append) { %> 
+  
+<% } %> 
+<% function bodyBottom(__append) { %>
+  
+<% } %>
+
+<% 
+  const pageConf = {
+    pageTitle: 'PageTitle',
+    pageDescription: 'description here',
+    lastUpdate: ''
+  };
+%> 
+<%- include('_layout/_default', {global, pageConf, headBottom, main, bodyBottom}); %>

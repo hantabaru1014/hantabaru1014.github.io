@@ -1,2 +1,2 @@
 # hantabaru1014.github.io
-アカウントのGitHub Pages. 制作物紹介とWebToolをホスト予定.
+hantabaru1014の制作物紹介・配布等を行うページのリポジトリ。

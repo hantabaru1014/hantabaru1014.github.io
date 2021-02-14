@@ -1,0 +1,16 @@
+<% const url = typeof redirectUrl !== 'undefined' ? redirectUrl : global.basePath %> 
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <%- include('../_parts/_metahead', {global, pageConf: {}}) -%>
+    <meta name="robots" content="noindex">
+    <meta http-equiv="refresh" content="0;URL='<%= url %>'">
+  </head>
+  <body>
+    <div>
+      <h1>このページはジャンプページです</h1>
+      <p>自動で目的のページにリダイレクトされるはずですが，されない場合は下のリンクからアクセスしてください。</p>
+      <p><a href="<%= url %>">リダイレクト先のページ</a></p>
+    </div>
+  </body>
+</html>

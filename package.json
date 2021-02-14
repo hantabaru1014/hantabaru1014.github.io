@@ -1,0 +1,35 @@
+{
+  "name": "hantabaru1014.github.io",
+  "version": "1.0.0",
+  "description": "アカウントのGitHub Pages.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "gulp": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hantabaru1014/hantabaru1014.github.io.git"
+  },
+  "author": "hantabaru1014",
+  "license": "",
+  "bugs": {
+    "url": "https://github.com/hantabaru1014/hantabaru1014.github.io/issues"
+  },
+  "homepage": "https://hantabaru1014.github.io/",
+  "dependencies": {},
+  "devDependencies": {
+    "autoprefixer": "^10.2.4",
+    "del": "^6.0.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-ejs": "^5.1.0",
+    "gulp-jsbeautifier": "^3.0.1",
+    "gulp-postcss": "^9.0.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "postcss": "^8.2.6",
+    "st": "^2.0.0",
+    "tailwindcss": "^2.0.3"
+  }
+}

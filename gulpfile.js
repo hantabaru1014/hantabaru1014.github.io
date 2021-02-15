@@ -10,6 +10,7 @@ const beautify = require('gulp-jsbeautifier');
 const http = require('http');
 const st = require('st');
 const path = require('path');
+const cleanCSS = require('gulp-clean-css');
 
 const SITE_GLOBAL_DATA = {
   siteTitle: 'バルのおもちゃ箱',
@@ -30,10 +31,12 @@ function compileSass(){
     tailwindcss(),
     autoprefixer()
   ];
-  return gulp.src(['src/**/*.scss', '!src/**/_*.scss'])
+  const p = gulp.src(['src/**/*.scss', '!src/**/_*.scss'])
     .pipe(sass().on('error', sass.logError))
-    .pipe(postcss(plugins))
-    .pipe(gulp.dest(DEST_DIR));
+    .pipe(postcss(plugins));
+  if (process.env.NODE_ENV === 'production') p.pipe(cleanCSS());
+  p.pipe(gulp.dest(DEST_DIR));
+  return p;
 }
 
 function clearDestDir(){

@@ -1,0 +1,11 @@
+.fmt-dl {
+	dt {
+		@apply font-bold;
+	}
+	dt::after {
+		content: ' : ';
+	}
+	dd {
+		@apply mb-1;
+	}
+}

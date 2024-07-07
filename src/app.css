@@ -1,3 +1,19 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer base {
+	body {
+		@apply bg-gray-50;
+	}
+	a {
+		@apply text-blue-600 visited:text-purple-600 hover:underline;
+	}
+}
+
+.black-band {
+	@apply bg-gray-800 text-white;
+	a {
+		@apply text-white visited:text-white hover:text-gray-500 hover:no-underline;
+	}
+}

@@ -10,13 +10,13 @@
 <div class="flex flex-col justify-between lg:flex-row lg:space-x-5">
 	<div class="flex-grow space-y-8">
 		<div>
-			<SectionHeader title="このサイトについて" />
+			<SectionHeader>このサイトについて</SectionHeader>
 			<p>
 				このサイトは主に hantabaru1014 が作成したソフトウェアやWebツールを紹介・配布しています。
 			</p>
 		</div>
 		<div>
-			<SectionHeader title="hantabaru1014 について" />
+			<SectionHeader>hantabaru1014 について</SectionHeader>
 			<dl class="fmt-dl">
 				<dt>ID</dt>
 				<dd>hantabaru1014</dd>

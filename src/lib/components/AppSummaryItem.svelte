@@ -8,7 +8,7 @@
 </script>
 
 <div {id}>
-	<SectionHeader title={name} />
+	<SectionHeader>{name}</SectionHeader>
 	<div
 		class={$$slots.thumbnail
 			? 'flex flex-col lg:flex-row lg:justify-between lg:space-x-4'

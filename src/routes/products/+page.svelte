@@ -1,8 +1,13 @@
 <script lang="ts">
 	import AppSummaryItem from '$lib/components/AppSummaryItem.svelte';
 	import Images from '$lib/components/Images.svelte';
+	import PageMeta from '$lib/components/PageMeta.svelte';
 </script>
 
+<PageMeta
+	title="Products"
+	description="hantabaru1014が作成したソフトウェアやWebツールの紹介・配布"
+/>
 <div class="space-y-8">
 	<AppSummaryItem
 		id="moa"

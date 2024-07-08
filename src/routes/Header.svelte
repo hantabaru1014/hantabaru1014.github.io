@@ -1,7 +1,11 @@
+<script lang="ts">
+	import globalConfig from '$lib/globalConfig';
+</script>
+
 <header class="black-band text-xl shadow-md">
 	<div class="mx-auto flex max-w-6xl flex-row justify-between px-3 py-5">
 		<a href="/">
-			<h1 class="text-2xl hover:text-white">バルのおもちゃ箱</h1>
+			<h1 class="text-2xl hover:text-white">{globalConfig.siteTitle}</h1>
 		</a>
 		<nav>
 			<ul class="flex flex-row space-x-5">

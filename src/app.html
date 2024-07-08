@@ -5,6 +5,21 @@
 		<link rel="icon" href="%sveltekit.assets%/favicon.png" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		%sveltekit.head%
+		<script>
+			console.log(
+				'訪問ありがとうございます！\nこのサイトに問題があれば下のリンクからIssueを作成してください。\n\nThank you for visiting!\nIf this site have any problems, please post issues.\nhttps://github.com/hantabaru1014/hantabaru1014.github.io/issues'
+			);
+		</script>
+		<!-- Global site tag (gtag.js) - Google Analytics -->
+		<script async src="https://www.googletagmanager.com/gtag/js?id=G-NDJZPQPBTP"></script>
+		<script>
+			window.dataLayer = window.dataLayer || [];
+			function gtag() {
+				dataLayer.push(arguments);
+			}
+			gtag('js', new Date());
+			gtag('config', 'G-NDJZPQPBTP');
+		</script>
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">%sveltekit.body%</div>

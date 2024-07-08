@@ -1,12 +1,14 @@
 <script lang="ts">
 	import './page.css';
 	import SectionHeader from '$lib/components/SectionHeader.svelte';
+	import PageMeta from '$lib/components/PageMeta.svelte';
 </script>
 
 <svelte:head>
 	<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </svelte:head>
 
+<PageMeta title="About" description="このサイトについて。管理人(hantabaru1014)について。" />
 <div class="flex flex-col justify-between lg:flex-row lg:space-x-5">
 	<div class="flex-grow space-y-8">
 		<div>

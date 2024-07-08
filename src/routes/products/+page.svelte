@@ -12,6 +12,7 @@
 	>
 		<iframe
 			slot="thumbnail"
+			title="マシュマロ配信支援ツール（仮）の紹介動画"
 			width="560"
 			height="315"
 			src="https://www.youtube.com/embed/o7OTvmbbBSA"
@@ -84,6 +85,7 @@
 	<AppSummaryItem id="wordlens" name="PC版word lensもどき">
 		<iframe
 			slot="thumbnail"
+			title="PC版word lensもどきの紹介動画"
 			width="560"
 			height="315"
 			src="https://www.youtube.com/embed/dbaxwgBvcD8"

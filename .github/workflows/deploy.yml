@@ -3,6 +3,12 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: 'main'
+  workflow_dispatch:
+
+# 重複して実行された場合に前のをキャンセル
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
 
 jobs:
   build_site:

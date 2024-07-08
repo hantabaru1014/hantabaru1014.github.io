@@ -28,7 +28,9 @@ jobs:
 
       - name: build
         env:
-          BASE_PATH: '/${{ github.event.repository.name }}'
+          # <username>.github.io 以外の場合(こういうURLになるため: https://your-username.github.io/your-repo-name)
+          # BASE_PATH: '/${{ github.event.repository.name }}'
+          BASE_PATH: ''
         run: |
           npm run build
 
